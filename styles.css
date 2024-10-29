@@ -1,0 +1,291 @@
+:root {
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --box-sizing: border-box;
+    --margin: 0;
+    --padding: 0;
+    --text-decoration: none;
+    --color-text: #192431;
+    --transition: 0.5s; 
+    --box-shadow: #056CEB;
+    --background-color: #f2ebce;
+    --border-radius: 50%;
+    --border-image: 5px solid white;
+    --text-align: center;
+    --font-size: 16px;
+    --transition: #33334d;
+    --article-color: rgb(201, 196, 196)
+    --anthracite: #303030;
+    
+    
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.edu-au-vic-wa-nt-guides {
+    font-family: "edu", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@keyframes slideInG {
+
+    from {
+        transform: translate(500px, 0px);
+      }
+      to {
+        transform: translate(0px, 0px);
+      }
+    }
+  
+@keyframes slideInD {
+
+        from {
+            transform: translate(-500px, 00px);
+          }
+          to {
+            transform: translate(00px, 0px);
+          }
+        }
+      
+* {
+    box-sizing: var(--box-sizing);
+    margin: var(--margin);
+    padding: var(--padding);
+    text-decoration: var(--text-decoration);
+    color: var(--color-text);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    line-height: 1,5;
+}
+
+body {
+    background-color: #303030;
+    font-family: var(--font-family);
+    
+    
+    
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/SoloRush1-WCS/photos/paysage_voilier.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    width: 95%;
+    height: 100%;
+    margin: 2.5% 0% 0% 2.5%;
+    box-decoration-break: slice;
+      
+
+}
+#rio {
+    max-width: 100%%;
+    max-height: 200px;
+        
+}   
+
+#burger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 47%;
+    cursor: pointer;
+}
+
+h1  {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 1000ms;
+    align-items:end;
+    color: white;
+    text-shadow: 2px 2px var(--box-shadow);
+    padding-bottom: 25px;
+    font-family: pacifico;
+
+
+    
+}
+
+
+/* FIN HEADER */
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    padding: 5% 5%;
+    font-family: Edu AU VIC WA NT Guides;
+    
+          
+}
+
+
+.gd1>h2 {
+    font-size: 120%;
+    margin: 5% 10% 10% 10%;
+    justify-content: center;
+    font-family: pacifico;
+    text-shadow: 5px 5px 5px whitesmoke;
+    width: 20%;
+    padding-left: 10rem;
+   
+}
+
+.gd1>p {
+    padding-left: 11rem;
+    padding-bottom: 1rem;
+}
+
+
+.dg1>H2 {
+    font-size: 150%;
+    margin: 5% 10% 10% 10%;
+    justify-content: center;
+    font-family: pacifico;
+    text-shadow: 5px 5px 5px white;
+    
+}
+
+.dg1>p {
+    padding-right: 11rem;
+    padding-bottom: 1rem;
+}
+
+.gd2>h2 {
+    font-size: 120%;
+    margin: 5% 10% 10% 10%;
+    justify-content: center;
+    font-family: pacifico;
+    text-shadow: 5px 5px 5px whitesmoke;
+    padding-left: 10rem;
+}
+
+.gd2>p {
+    padding-left: 11rem;
+    padding-bottom: 1rem;
+}
+
+section>img {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    padding: 4%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+
+.gd1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 80%;
+    margin: 8%;
+    padding-right: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
+    animation-name: slideInG;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    background-image: url("/SoloRush1-WCS/photos/portrait_voilier.JPG");
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+}
+
+.dg1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 80%;
+    margin: 8%;
+    padding-right: 0;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
+    animation-name: slideInD;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    background-image: url("/SoloRush1-WCS/photos/portrait_personne.JPG");
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: 11rem;
+    
+}
+
+.gd2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 80%;
+    margin: 8%;
+    padding-right: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
+    animation-name: slideInG;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    background-image: url("/SoloRush1-WCS/photos/photo_cam_pana_&_objos.jpg");
+    background-size: 50% 33vh;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+section p, b {
+    margin: 0% 0% 5% 5%;
+    font-size: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19191a;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    
+}
+
+footer p, a {
+    font-size: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px  #67caa9;
+    font-family: edu;
+}
+
+abbr {
+    color: white;
+    font-size: 10px;
+}
+
